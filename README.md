@@ -1,4 +1,4 @@
-![CircleCI](https://circleci.com//gh/vincentangway/udacity-project-ml-microservice-kubernetes.svg?style=svg&circle-token=2948807d13b44e75670e7a5cea4ab0c2c4d219ec)
+[![CircleCI](https://circleci.com/gh/vincentangway/udacity-project5-ml-microservice-kubernetes.svg?style=svg&circle-token=d8d7adb9e058f5329992936c3e12181f1895a191)](https://app.circleci.com/pipelines/github/vincentangway/udacity-project5-ml-microservice-kubernetes)
 
 ## Project Overview
 
