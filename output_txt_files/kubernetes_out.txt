@@ -1,8 +1,15 @@
-vincent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+(.devops) vincent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+(.devops) vincent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
 Error from server (AlreadyExists): deployments.apps "ml-microservice" already exists
 NAME                               READY   STATUS    RESTARTS   AGE
-ml-microservice-68b8c699c9-c9ppd   1/1     Running   0          29s
+ml-microservice-68b8c699c9-c9ppd   1/1     Running   0          12h
 Unable to listen on port 8000: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8000: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8000: bind: address already in use]
 error: unable to listen on any of the requested ports: [{8000 8000}]
-vincent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$
+(.devops) vincent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$incent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
