@@ -1,0 +1,30 @@
+(.devops) vincent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$ docker logs d641e94ca0f7
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 731-449-385
+(.devops) vincent@ALIO:~/udacity/DevOps_Microservices/project-ml-microservice-kubernetes$ docker logs 8c181ec91280
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 185-897-907
+[2020-06-20 08:41:29,146] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-06-20 08:41:29,156] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-06-20 08:41:29,164] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-06-20 08:41:29,166] INFO in app: Prediction value: 20.35373177134412
+172.17.0.1 - - [20/Jun/2020 08:41:29] "POST /predict HTTP/1.1" 200 -
